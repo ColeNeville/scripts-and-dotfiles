@@ -23,6 +23,7 @@ fi
 
 # Remove snapd
 sudo rm -rf /var/cache/snapd
+snap remove --purge firefox
 sudo apt-get autoremove --purge -y snapd gnome-software-plugin-snap
 sudo apt-mark hold snapd
 rm -rf ~/snap
@@ -39,7 +40,7 @@ flatpak install flathub com.spotify.Client
 
 
 # Install Pop!_OS shell
-sudo apt-get install -y gnome-shell-extensions node-typescript make
+sudo apt-get install -y gnome-shell-extensions gnome-shell-extensions-manager node-typescript make
 
 git clone https://github.com/pop-os/shell.git pop-os-shell
 cd pop-os-shell
