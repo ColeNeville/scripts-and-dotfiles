@@ -43,6 +43,7 @@ sudo apt-get install -y gnome-shell-extensions node-typescript make
 
 git clone https://github.com/pop-os/shell.git pop-os-shell
 cd pop-os-shell
+git checkout master_jammy
 make local-install
 
 
